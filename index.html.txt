@@ -1,0 +1,199 @@
+<!DOCTYPE html><html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuidarte Terapias & Estética</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdf6f9;
+      color: #333;
+    }
+    header {
+      background-color: #f8b7cd;
+      padding: 30px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      color: #fff;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    section h2 {
+      color: #cc4e78;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .servicos ul {
+      list-style: none;
+      padding: 0;
+    }
+    .servicos li {
+      background: #ffe9f1;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    .servicos button {
+      background: #cc4e78;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .descricao {
+      display: none;
+      margin-top: 10px;
+      background: #fff0f5;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .descricao img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    .contato a {
+      display: inline-block;
+      background: #cc4e78;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 15px 5px 0 0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    input, textarea, button {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button[type="submit"] {
+      background-color: #cc4e78;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #b84269;
+    }
+    footer {
+      background-color: #f8b7cd;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+  <script>
+    function toggleDescricao(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>  <header>
+    <h1>Cuidarte Terapias & Estética</h1>
+  </header>  <section>
+    <h2>Sobre Nós</h2>
+    <p>
+      Um espaço de cuidado, acolhimento e bem-estar. Atendimentos humanizados com foco na saúde, beleza e autoestima. Sinta-se à vontade para agendar sua consulta e viver essa experiência!
+    </p>
+  </section>  <section class="servicos">
+    <h2>Serviços</h2>
+    <ul>
+      <li>
+        Drenagem Linfática
+        <button onclick="toggleDescricao('desc1')">Saiba mais</button>
+        <div class="descricao" id="desc1">
+          <p>Estimula o sistema linfático, eliminando toxinas e reduzindo inchaços. Ideal para pós-operatórios e retenção de líquidos.</p>
+          <img src="https://i.imgur.com/9tZlPdW.jpg" alt="Drenagem Linfática">
+        </div>
+      </li>
+      <li>
+        Limpeza de Pele
+        <button onclick="toggleDescricao('desc2')">Saiba mais</button>
+        <div class="descricao" id="desc2">
+          <p>Remove impurezas, células mortas e cravos, promovendo uma pele mais saudável, limpa e hidratada.</p>
+          <img src="https://i.imgur.com/kYVlmTO.jpg" alt="Limpeza de Pele">
+        </div>
+      </li>
+      <li>
+        Massagem Relaxante
+        <button onclick="toggleDescricao('desc3')">Saiba mais</button>
+        <div class="descricao" id="desc3">
+          <p>Alivia tensões musculares e promove bem-estar físico e mental através de toques suaves e contínuos.</p>
+          <img src="https://i.imgur.com/IQZz7cZ.jpg" alt="Massagem Relaxante">
+        </div>
+      </li>
+      <li>
+        Massagem Modeladora
+        <button onclick="toggleDescricao('desc4')">Saiba mais</button>
+        <div class="descricao" id="desc4">
+          <p>Utiliza manobras vigorosas para ajudar na quebra de gordura localizada e melhora da circulação.</p>
+          <img src="https://i.imgur.com/FNx5Y2L.jpg" alt="Massagem Modeladora">
+        </div>
+      </li>
+      <li>
+        Tratamentos Corporais
+        <button onclick="toggleDescricao('desc5')">Saiba mais</button>
+        <div class="descricao" id="desc5">
+          <p>Protocolos personalizados para celulite, gordura localizada, flacidez e hidratação profunda.</p>
+          <img src="https://i.imgur.com/D7N8nwa.jpg" alt="Tratamentos Corporais">
+        </div>
+      </li>
+      <li>
+        Ventosa
+        <button onclick="toggleDescricao('desc6')">Saiba mais</button>
+        <div class="descricao" id="desc6">
+          <p>Terapia que utiliza sucção para aliviar dores musculares, melhorar a circulação e reduzir tensões.</p>
+          <img src="https://i.imgur.com/yhrF5Az.jpg" alt="Ventosa">
+        </div>
+      </li>
+      <li>
+        Reiki
+        <button onclick="toggleDescricao('desc7')">Saiba mais</button>
+        <div class="descricao" id="desc7">
+          <p>Terapia energética que promove equilíbrio emocional e físico através da imposição de mãos.</p>
+          <img src="https://i.imgur.com/9lRRRTu.jpg" alt="Reiki">
+        </div>
+      </li>
+      <li>
+        Auriculoterapia
+        <button onclick="toggleDescricao('desc8')">Saiba mais</button>
+        <div class="descricao" id="desc8">
+          <p>Tratamento que estimula pontos específicos da orelha para aliviar dores, ansiedade e outros sintomas.</p>
+          <img src="https://i.imgur.com/npiO2oz.jpg" alt="Auriculoterapia">
+        </div>
+      </li>
+    </ul>
+  </section>  <section class="contato">
+    <h2>Agende sua Consulta</h2>
+    <form action="mailto:rosanabarrosaquino@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <input type="tel" name="telefone" placeholder="Seu telefone" />
+      <textarea name="mensagem" rows="5" placeholder="Mensagem ou serviço desejado" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <br />
+    <a href="https://wa.me/5517988159284?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20seus%20serviços" target="_blank">Fale no WhatsApp</a>
+  </section>  <footer>
+    <p>&copy; 2025 Cuidarte Terapias & Estética | Desenvolvido com carinho</p>
+  </footer></body>
+</html>
